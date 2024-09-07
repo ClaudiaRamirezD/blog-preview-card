@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-light: hsl(0, 0%, 42%);
+    --gray-dark: hsl(0, 0%, 7%);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--yellow);
+    font-family: 'Figtree', sans-serif;
+    margin: 0px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    margin: 1.3rem;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+.attribution { 
+    margin-top: 2rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.container{
+    background-color:  var(--white);
+    padding: 1.25rem;
+    border-radius: .8rem;
+    border: 1px solid black;
+    box-shadow: 6px 6px 0px rgb(0, 0, 0);
+}
+
+.img-container img{
+    border-radius: .8rem;
+    width: 100%;
+}
+
+.info button{
+    font-size: 13px;
+    font-weight: 800;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: .3rem;
+    margin-top: 1.3rem;
+    padding: .3rem .7rem;
+}
+
+.info h3{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.info h1{
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.info h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.info p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray-light);
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-size: 12px;
+    font-weight: 800;
+    padding-top: .7rem;
+}
+
+.img-contact img{
+    width: 2rem;
+}
+
+.contact .name{
+    letter-spacing: -.9px;
+}
+
+@media (min-width: 500px) {
+    .container {
+        width: 400px;
+    }
+}
