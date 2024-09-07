@@ -25,7 +25,7 @@ body{
     align-items: center;
     justify-content: center;
     height: calc(100vh - 1px);
-    margin: 1.3rem;
+    margin: 1.5rem;
 }
 
 img, picture, video, canvas, svg {
@@ -92,6 +92,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     font-weight: 500;
     color: var(--gray-light);
+    line-height: 1.5rem;
 }
 
 .contact{
@@ -108,7 +109,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .contact .name{
-    letter-spacing: -.9px;
+    letter-spacing: -.85px;
+    font-weight: 900;
 }
 
 @media (min-width: 500px) {
